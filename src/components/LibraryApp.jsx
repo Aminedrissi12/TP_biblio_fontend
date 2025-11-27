@@ -15,8 +15,7 @@ import '../App.css'
 
 // --- FIX: REMOVE process.env AND USE DIRECT URL ---
 // Pour éviter l'erreur "process is not defined" dans le navigateur
-const API_BASE_URL =
-  process.env.REACT_APP_API_URL || 'http://localhost:8080/api'
+const API_BASE_URL = process.env.REACT_APP_API_URL
 
 export default function LibraryApp() {
   const [currentUser, setCurrentUser] = useState(null)
